@@ -4,8 +4,13 @@ import './Home.css';  // Import the CSS for styling
 import CardThree from "../components /CardThree";
 import CardOne from "../components /CardOne";
 import CardTwo from "../components /CardTwo";
+import CardFour from "../components /CardFour";
 
 function Home() {
+
+    const handleGoToExternalSite = () => {
+        window.location.href = "https://street-sneaks.vercel.app";
+      };
 
     const navigate = useNavigate();
     const handleo = () =>{
@@ -15,7 +20,7 @@ function Home() {
     const handlet = () =>{
         navigate("./card-two")
     };
-    
+
     const handleth = () =>{
         navigate("./card-three")
     };
@@ -23,7 +28,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <div className="card" onClick={handleo}>
+      <div className="card" onClick={handleGoToExternalSite}>
           <h2>Card 1</h2>
       </div>
       <div className="card" onClick={handlet}>
@@ -31,6 +36,9 @@ function Home() {
       </div>
       <div className="card" onClick={handleth}>
           <h2>Card 3</h2>
+      </div>
+      <div className="card" onClick={handleth}>
+          <h2>Card 4</h2>
       </div>
     </div>
   );
