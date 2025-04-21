@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
+
 function CardTwo() {
   const navigate = useNavigate();
 
@@ -31,18 +32,27 @@ function CardTwo() {
               <td>{movie.name}</td>
               <td>
                 <video width="250" controls>
-                  <source src={`/movies/${movie.file}`} type="video/mp4" />
-                  Your browser does not support the video tag.
+                <video width="250" controls>
+  <source src={`/movies/${movie.file}`} type="video/mp4" />
+  <source src={`/movies/${movie.file}`} type="video/webm" />
+  <source src={`/movies/${movie.file}`} type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+                  
                 </video>
               </td>
               <td>
-                <a
-                  href={`/movies/${movie.file}`}
-                  download
-                  className="download-btn"
-                >
-                  Download
-                </a>
+              <td>
+  <a
+    href={`/movies/${movie.file}`} // ✅ Corrected path
+    download
+    // className="download-btn"
+  >
+    Download
+  </a>
+</td>
+
               </td>
             </tr>
           ))}
