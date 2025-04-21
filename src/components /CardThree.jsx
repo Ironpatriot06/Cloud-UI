@@ -3,16 +3,16 @@ import "./Card.css";
 
 function CardThree() {
   const songs = [
-    { name: "Blinding Lights", link: "https://www.youtube.com/watch?v=4NRXx6U8ABQ" },
-    { name: "Levitating", link: "https://www.youtube.com/watch?v=TUVcZfQe-Kw" },
-    { name: "Shape of You", link: "https://www.youtube.com/watch?v=JGwWNGJdvx8" },
-    { name: "Industry Baby", link: "https://www.youtube.com/watch?v=UTHLKHL_whs" },
-    { name: "Stay", link: "https://www.youtube.com/watch?v=kTJczUoc26U" },
-    { name: "Montero", link: "https://www.youtube.com/watch?v=6swmTBVI83k" },
-    { name: "Peaches", link: "https://www.youtube.com/watch?v=tQ0yjYUFKAE" },
-    { name: "Watermelon Sugar", link: "https://www.youtube.com/watch?v=E07s5ZYygMg" },
-    { name: "Positions", link: "https://www.youtube.com/watch?v=tcYodQoapMg" },
-    { name: "Save Your Tears", link: "https://www.youtube.com/watch?v=XXYlFuWEuKI" }
+    { name: "Blinding Lights", file: "blinding_lights.mp3" },
+    { name: "Levitating", file: "levitating.mp3" },
+    { name: "Shape of You", file: "shape_of_you.mp3" },
+    { name: "Industry Baby", file: "industry_baby.mp3" },
+    { name: "Stay", file: "stay.mp3" },
+    { name: "Montero", file: "montero.mp3" },
+    { name: "Peaches", file: "peaches.mp3" },
+    { name: "Watermelon Sugar", file: "watermelon_sugar.mp3" },
+    { name: "Positions", file: "positions.mp3" },
+    { name: "Save Your Tears", file: "save_your_tears.mp3" }
   ];
 
   return (
@@ -23,6 +23,7 @@ function CardThree() {
           <tr>
             <th>Song Name</th>
             <th>Listen</th>
+            <th>Download</th>
           </tr>
         </thead>
         <tbody>
@@ -30,7 +31,19 @@ function CardThree() {
             <tr key={index}>
               <td>{song.name}</td>
               <td>
-                <a href={song.link} target="_blank" rel="noopener noreferrer">Listen</a>
+                <audio controls>
+                  <source src={`/music/${song.file}`} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <a
+                  href={`/music/${song.file}`}
+                  download
+                  className="download-btn"
+                >
+                  Download
+                </a>
               </td>
             </tr>
           ))}
