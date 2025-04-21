@@ -6,11 +6,11 @@ function CardThree() {
   const navigate = useNavigate();
 
   const songs = [
+    { name: "Winning Speech", file: "Winning Speech (Music Video) Karan Aujla _ Mxrci _ Latest Punjabi Songs 2024-yt.savetube.me.mp3" },
     { name: "Espresso", file: "Sabrina Carpenter - Espresso (Official Video)-yt.savetube.me.mp3" },
     { name: "Until I found you", file: "Stephen Sanchez - Until I Found You (Official Video)-yt.savetube.me.mp3" },
     { name: "Shape of You", file: "Ed Sheeran - Shape of You (Lyrics)-yt.savetube.me.mp3" },
-    { name: "Not Like Us", file: "Kendrick Lamar - Not Like Us-yt.savetube.me.mp3" },
-    { name: "Winning Speech", file: "Winning Speech (Music Video) Karan Aujla _ Mxrci _ Latest Punjabi Songs 2024-yt.savetube.me.mp3" }
+    { name: "Not Like Us", file: "Kendrick Lamar - Not Like Us-yt.savetube.me.mp3" }
   ];
 
   return (

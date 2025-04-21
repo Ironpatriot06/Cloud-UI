@@ -8,9 +8,9 @@ function CardTwo() {
 
   const movies = [
     { name: "Inception", file: "20th Century Fox Intro HD.mp4" },
-    { name: "Interstellar", file: "Dharma Productions (2008) [HD _ 1080p].mp4" },
+    { name: "Interstellar", file: "20th Century Fox Intro HD.mp4" },
     { name: "Rocky and Rani", file: "Dharma Productions (2008) [HD _ 1080p].mp4" },
-    { name: "The Dark Knight", file: "Pixar Intro HD 1080p.mp4" },
+    { name: "The Dark Knight", file: "20th Century Fox Intro HD.mp4" },
     { name: "Cars", file: "Pixar Intro HD 1080p.mp4" },
     { name: "Catch Me If You Can", file: "Pixar Intro HD 1080p.mp4" }
   ];
@@ -32,15 +32,10 @@ function CardTwo() {
               <td>{movie.name}</td>
               <td>
                 <video width="250" controls>
-                <video width="250" controls>
   <source src={`/movies/${movie.file}`} type="video/mp4" />
-  <source src={`/movies/${movie.file}`} type="video/webm" />
-  <source src={`/movies/${movie.file}`} type="video/ogg" />
   Your browser does not support the video tag.
 </video>
 
-                  
-                </video>
               </td>
               <td>
               <td>
