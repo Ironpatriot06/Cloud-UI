@@ -55,7 +55,7 @@ function CardTwo() {
       </table>
 
       <div className="back-home-btn-container">
-        <button className="back-home-btn" onClick={() => navigate("/")}>
+        <button className="back-home-btn" onClick={() => navigate("/home")}>
           ⬅️ Back to Home
         </button>
       </div>

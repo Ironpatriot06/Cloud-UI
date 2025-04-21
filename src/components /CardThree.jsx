@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Card.css";
+import "./Card2.css";
 
 function CardThree() {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ function CardThree() {
       </table>
 
       <div className="back-home-btn-container">
-        <button className="back-home-btn" onClick={() => navigate("/")}>
+        <button className="back-home-btn" onClick={() => navigate("/home")}>
           ⬅️ Back to Home
         </button>
       </div>

@@ -150,3 +150,156 @@ body{
   font-size: 55px;
   padding-top: 2vh;
 }
+
+
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main heading */
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0 1rem;
+  color: #38bdf8;
+}
+
+/* Home container */
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  background-color: #1e293b;
+  border: 2px solid #38bdf8;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  background-color: #0f172a;
+}
+
+/* Components layout */
+.component-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+}
+
+/* Buttons */
+.button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 0.6rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: 0.5rem;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Tables */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  color: #f8fafc;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem;
+  border: 1px solid #334155;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #334155;
+}
+
+/* Terminal UI */
+.terminal-box {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  height: 200px;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #38bdf8;
+}
+
+/* QR display */
+.qr-code-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.qr-code-box img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .main-heading {
+    font-size: 2.2rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

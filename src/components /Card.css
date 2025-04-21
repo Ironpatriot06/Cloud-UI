@@ -1,89 +1,111 @@
+/* Card.css */
+
 .card-details {
-  text-align: center;
-  margin: 50px auto;
-  padding: 40px;
-  max-width: 700px;
-  background-color: #fefefe;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(to right, #f9fafb, #e0f7fa);
-}
-body{
-  background-color: #e1f5fe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card-details h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
+  text-align: center;
   color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .styled-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 16px;
-  background-color: white;
+  margin-bottom: 2rem;
 }
 
-.styled-table thead {
+.styled-table thead tr {
   background-color: #009879;
-  color: #ffffff;
+  color: black;
+  text-align: left;
 }
 
-.styled-table th, .styled-table td {
-  padding: 12px 20px;
-  border: 1px solid #ddd;
+.styled-table th,
+.styled-table td {
+  padding: 12px 16px;
+  border: 1px solid #dddddd;
+  vertical-align: middle;
 }
 
-.styled-table tbody tr:nth-child(even) {
+.styled-table tbody tr {
   background-color: #f3f3f3;
+  transition: background-color 0.3s ease;
 }
 
 .styled-table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: #e1f5f2;
 }
 
-.styled-table a {
+video {
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+a {
   text-decoration: none;
   color: #009879;
   font-weight: bold;
 }
 
-.styled-table a:hover {
+a:hover {
   text-decoration: underline;
+  color: #007a63;
 }
-
-
-.download-btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 6px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.download-btn:hover {
-  background-color: #45a049;
-}
-
-
 
 .back-home-btn-container {
-  margin-top: 20px;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .back-home-btn {
-  background-color: #333;
-  color: white;
   padding: 10px 20px;
+  background-color: #009879;
+  color: white;
+  font-size: 1rem;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .back-home-btn:hover {
-  background-color: #555;
+  background-color: #007a63;
+}
+
+body{
+  color:black;
+}
+
+td{
+  color:black;
+}
+
+
+
+video {
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  max-width: 320px; /* Increased from 250px */
+  height: auto;
+}
+
+video {
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+  height: 200px; /* Optional fixed height */
+  object-fit: cover; /* Ensures nice cropping if height is fixed */
 }

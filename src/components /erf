@@ -1,0 +1,487 @@
+.card-details {
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 700px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, #f9fafb, #e0f7fa);
+}
+body{
+  background-color: #e1f5fe;
+}
+
+.card-details h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: white;
+}
+
+.styled-table thead {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table a {
+  text-decoration: none;
+  color: #009879;
+  font-weight: bold;
+}
+
+.styled-table a:hover {
+  text-decoration: underline;
+}
+
+
+.download-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+.back-home-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-home-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #555;
+}
+
+td{
+  color:black;
+}
+
+
+
+/* Card.css */
+
+.card-details {
+  width: 100%;
+  max-width: 1000px; /* Set a max-width for better control */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Prevents table from expanding too wide */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.styled-table th, .styled-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.styled-table td {
+  word-wrap: break-word; /* Break long words to avoid overflow */
+}
+
+.styled-table video {
+  max-width: 100%; /* Make video responsive */
+  height: auto;
+}
+
+/* Back to home button styling */
+.back-home-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-home-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.back-home-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Card.css */
+
+/* Card details container */
+.card-details {
+  width: 100%;
+  max-width: 1000px; /* Max width for better control */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styled table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Fixed layout to avoid expanding columns */
+}
+
+.styled-table th, .styled-table td {
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.styled-table td {
+  word-wrap: break-word; /* Break long words */
+}
+
+/* Ensure the audio player is responsive */
+.styled-table audio {
+  width: 100%; /* Make audio player responsive */
+  max-width: 250px; /* Limit max width to prevent overflow */
+  height: auto;
+}
+
+/* Download button styling */
+.download-btn {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+/* Back to home button container */
+.back-home-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Back to home button styling */
+.back-home-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.back-home-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+/* General Styles */
+body {
+  background-color: #e1f5fe;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card container */
+.card-details {
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 900px; /* Increased max width for more space */
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, #f9fafb, #e0f7fa);
+}
+
+/* Card title */
+.card-details h2 {
+  margin-bottom: 40px;
+  font-size: 30px; /* Larger font for better readability */
+  color: #333;
+}
+
+/* Table styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px; /* Increased font size */
+  background-color: white;
+  margin-top: 20px;
+}
+
+.styled-table thead {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+.styled-table th, .styled-table td {
+  padding: 15px 25px; /* Increased padding for better spacing */
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table a {
+  text-decoration: none;
+  color: #009879;
+  font-weight: bold;
+}
+
+.styled-table a:hover {
+  text-decoration: underline;
+}
+
+.styled-table td {
+  color: black;
+  word-wrap: break-word; /* Prevent overflow */
+}
+
+.styled-table video {
+  max-width: 100%; /* Make video responsive */
+  height: auto;
+}
+
+.styled-table audio {
+  width: 100%; /* Make audio player responsive */
+  max-width: 250px; /* Limit max width */
+  height: auto;
+}
+
+/* Download button */
+.download-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px; /* Increase font size */
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+/* Back to home button */
+.back-home-btn-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-home-btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px; /* Increased padding for better size */
+  border: none;
+  border-radius: 8px;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #555;
+}
+
+/* Ensuring responsiveness of the card */
+.card-details {
+  width: 100%;
+  max-width: 1100px; /* Max width increased */
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.styled-table {
+  table-layout: fixed; /* Fixed layout to avoid expanding columns */
+}
+
+.styled-table th, .styled-table td {
+  padding: 20px; /* Increased padding for a cleaner look */
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.styled-table td {
+  word-wrap: break-word;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .card-details {
+    padding: 20px; /* Adjust padding for mobile */
+    margin: 20px; /* Reduce margin on mobile */
+  }
+
+  .styled-table th, .styled-table td {
+    padding: 12px 15px; /* Adjust padding for mobile */
+    font-size: 14px; /* Smaller font for mobile */
+  }
+
+  .back-home-btn {
+    font-size: 16px; /* Adjust button size */
+    padding: 10px 20px;
+  }
+
+  .download-btn {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 15px;
+  }
+}
+
+
+
+/* Wider card container */
+.card-details {
+  width: 100%;
+  max-width: 1200px; /* Increased width */
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, #f9fafb, #e0f7fa);
+}
+
+/* Wrap table in a scrollable container */
+.styled-table-container {
+  overflow-x: auto;
+}
+
+/* Table layout with auto sizing for clarity */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  background-color: white;
+  margin-top: 20px;
+  table-layout: auto; /* Changed from fixed to auto */
+}
+
+/* Column width tuning */
+.styled-table th:nth-child(1),
+.styled-table td:nth-child(1) {
+  width: 25%;
+}
+
+.styled-table th:nth-child(2),
+.styled-table td:nth-child(2) {
+  width: 35%;
+}
+
+.styled-table th:nth-child(3),
+.styled-table td:nth-child(3) {
+  width: 20%;
+}
+
+/* Table styling */
+.styled-table thead {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+.styled-table th, .styled-table td {
+  padding: 15px 25px;
+  text-align: left;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table a {
+  text-decoration: none;
+  color: #009879;
+  font-weight: bold;
+}
+
+.styled-table a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card-details {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}

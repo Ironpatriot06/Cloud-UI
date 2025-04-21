@@ -1,0 +1,64 @@
+/* General styling for the terminal container */
+.terminal {
+    background-color: #1e1e1e; /* Dark background to mimic terminal */
+    color: #fff; /* White text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal look */
+    width: 100%;
+    max-width: 800px; /* Limit width */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto; /* Allow scrolling when content overflows */
+  }
+  
+  /* Output section */
+  .terminal-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .terminal-output div {
+    margin: 5px 0;
+  }
+  
+  /* Input styling */
+  .terminal input {
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text */
+    border: 1px solid #444; /* Border for input */
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+  }
+  
+  .terminal input:focus {
+    border-color: #009879; /* Highlight input when focused */
+  }
+  
+  .terminal input::placeholder {
+    color: #bbb; /* Lighter placeholder text */
+  }
+  
+  /* Optional: Add some typing cursor animation to mimic terminal behavior */
+  .terminal input:focus::after {
+    content: '|';
+    color: #fff;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      visibility: hidden;
+    }
+  }
+  

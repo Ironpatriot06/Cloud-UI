@@ -1,0 +1,68 @@
+/* Container for Auth component */
+.card-details {
+    max-width: 400px;
+    margin: 3rem auto;
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  .card-details h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  
+  /* Input field styling */
+  input[type="email"],
+  input[type="password"] {
+    width: 90%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #94a3b8;
+    border-radius: 0.5rem;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    font-size: 1rem;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0ea5e9;
+  }
+  
+  /* General Styling */
+  body {
+    background-color: #0f172a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8fafc;
+  }
+  
+  .card-details p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+  }
+  
