@@ -1,12 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 function CardTwo() {
+  const navigate = useNavigate();
+
   const movies = [
-    { name: "Inception", file: "inception.mp4" },
-    { name: "Interstellar", file: "interstellar.mp4" },
-    { name: "The Dark Knight", file: "dark_knight.mp4" },
-    { name: "Avengers: Endgame", file: "endgame.mp4" }
+    { name: "Inception", file: "20th Century Fox Intro HD.mp4" },
+    { name: "Interstellar", file: "Dharma Productions (2008) [HD _ 1080p].mp4" },
+    { name: "Rocky and Rani", file: "Dharma Productions (2008) [HD _ 1080p].mp4" },
+    { name: "The Dark Knight", file: "Pixar Intro HD 1080p.mp4" },
+    { name: "Cars", file: "Pixar Intro HD 1080p.mp4" },
+    { name: "Catch Me If You Can", file: "Pixar Intro HD 1080p.mp4" }
   ];
 
   return (
@@ -43,6 +48,12 @@ function CardTwo() {
           ))}
         </tbody>
       </table>
+
+      <div className="back-home-btn-container">
+        <button className="back-home-btn" onClick={() => navigate("/")}>
+          ⬅️ Back to Home
+        </button>
+      </div>
     </div>
   );
 }

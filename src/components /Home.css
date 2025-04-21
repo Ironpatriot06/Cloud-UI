@@ -141,3 +141,12 @@ body{
 .card-details .card-btn:hover {
   background-color: #45a049;  /* Slightly darker green on hover */
 }
+
+
+.main-heading{
+  text-align: center;
+  margin: 0;padding: 0;
+  background-color: #e1f5fe;
+  font-size: 55px;
+  padding-top: 2vh;
+}

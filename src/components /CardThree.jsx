@@ -1,18 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 function CardThree() {
+  const navigate = useNavigate();
+
   const songs = [
-    { name: "Blinding Lights", file: "blinding_lights.mp3" },
-    { name: "Levitating", file: "levitating.mp3" },
-    { name: "Shape of You", file: "shape_of_you.mp3" },
-    { name: "Industry Baby", file: "industry_baby.mp3" },
-    { name: "Stay", file: "stay.mp3" },
-    { name: "Montero", file: "montero.mp3" },
-    { name: "Peaches", file: "peaches.mp3" },
-    { name: "Watermelon Sugar", file: "watermelon_sugar.mp3" },
-    { name: "Positions", file: "positions.mp3" },
-    { name: "Save Your Tears", file: "save_your_tears.mp3" }
+    { name: "Espresso", file: "Sabrina Carpenter - Espresso (Official Video)-yt.savetube.me.mp3" },
+    { name: "Until I found you", file: "Stephen Sanchez - Until I Found You (Official Video)-yt.savetube.me.mp3" },
+    { name: "Shape of You", file: "Ed Sheeran - Shape of You (Lyrics)-yt.savetube.me.mp3" },
+    { name: "Not Like Us", file: "Kendrick Lamar - Not Like Us-yt.savetube.me.mp3" },
+    { name: "Winning Speech", file: "Winning Speech (Music Video) Karan Aujla _ Mxrci _ Latest Punjabi Songs 2024-yt.savetube.me.mp3" }
   ];
 
   return (
@@ -49,6 +47,12 @@ function CardThree() {
           ))}
         </tbody>
       </table>
+
+      <div className="back-home-btn-container">
+        <button className="back-home-btn" onClick={() => navigate("/")}>
+          ⬅️ Back to Home
+        </button>
+      </div>
     </div>
   );
 }

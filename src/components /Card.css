@@ -8,6 +8,9 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(to right, #f9fafb, #e0f7fa);
 }
+body{
+  background-color: #e1f5fe;
+}
 
 .card-details h2 {
   margin-bottom: 30px;
@@ -61,4 +64,26 @@
 
 .download-btn:hover {
   background-color: #45a049;
+}
+
+
+
+.back-home-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-home-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #555;
 }
